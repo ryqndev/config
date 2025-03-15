@@ -3,12 +3,13 @@ import { configs as ReactThreeConfigs } from '@react-three/eslint-plugin';
 import globals from 'globals';
 import stylelintConfig from 'eslint-config-stylelint';
 
+import { react } from 'configs/react';
+import { global } from 'configs/global';
+import { imports } from 'configs/imports';
 
 import tseslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
-
-// eslint-disable-next-line
 export default [
     { files: ['**/*.{js,mjs,cjs,ts,tsx,jsx}'] },
     {
@@ -23,6 +24,9 @@ export default [
             }
         }
     },
+    ...react(),
+    ...global(),
+    ...imports(),
     // pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
     // ...stylelintConfig,
@@ -34,13 +38,6 @@ export default [
             },
         },
         rules: {
-            'no-restricted-globals': [
-                'error',
-                {
-                    name: 'close',
-                    message: 'Use window.close if the global is wanted',
-                },
-            ],
             'no-absolute-path': 'off',
             'arrow-parents': ['off', 'always'],
 
