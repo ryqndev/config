@@ -1,6 +1,6 @@
 {
   "name": "@ryqn/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ryan Yang <ryanqyang@gmail.com> (https://github.com/ryqndev/)",
   "description": "Personal eslint styling formatter",
   "main": "dist/@ryqn.mjs",
