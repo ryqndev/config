@@ -3,9 +3,9 @@ import { configs as ReactThreeConfigs } from '@react-three/eslint-plugin';
 import globals from 'globals';
 import stylelintConfig from 'eslint-config-stylelint';
 
-import { react } from 'configs/react';
-import { global } from 'configs/global';
-import { imports } from 'configs/imports';
+import { react } from './configs/react';
+import { global } from './configs/global';
+import { imports } from './configs/imports';
 
 import tseslint from 'typescript-eslint';
 
