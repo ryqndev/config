@@ -1,19 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "target": "ES2022",
     "module": "ESNext",
+
+    "lib": ["es2022"],
+
+    "declaration": true,
+
+    "esModuleInterop": true,
     "skipLibCheck": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
     "types": ["node"],
 
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
 
-    "outDir": "./dist",
+    "outDir": "dist",
 
     "baseUrl": "./src"
   },

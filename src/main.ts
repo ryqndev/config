@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint';
 import globals from 'globals';
 
 import { global } from './configs/global';
@@ -8,11 +9,14 @@ import { react } from './configs/react';
 import { styles } from './configs/styles';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+
+const configs: Linter.Config[] = [
     react(),
     global(),
-    ...typescript(),
     imports(),
     r3f(),
-    styles()
-];
+    styles(),
+    ...typescript(),
+]
+
+export default configs;
