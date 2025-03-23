@@ -4,7 +4,9 @@
   "author": "Ryan Yang <ryanqyang@gmail.com> (https://github.com/ryqndev/)",
   "description": "Personal eslint styling formatter",
   "main": "src/main.ts",
-  "scripts": {},
+  "scripts": {
+    "publish": "pnpm version patch && npm publish"
+  },
   "type": "module",
   "keywords": [],
   "license": "ISC",
