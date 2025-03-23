@@ -12,10 +12,10 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.13.11",
     "jiti": "^2.4.2"
   },
   "dependencies": {
+    "@types/node": "^22.13.11",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
