@@ -5,7 +5,7 @@
   "description": "Personal eslint styling formatter",
   "main": "src/main.ts",
   "scripts": {
-    "publish": "pnpm version patch && npm publish"
+    "bump": "pnpm version patch"
   },
   "type": "module",
   "keywords": [],
