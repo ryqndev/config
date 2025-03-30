@@ -1,12 +1,12 @@
 import type { Linter } from 'eslint';
 import globals from 'globals';
 
-import { global } from './configs/global';
-import { imports } from './configs/imports';
-import { r3f } from './configs/libraries/r3f';
-import { typescript } from './configs/libraries/typescript';
-import { react } from './configs/react';
-import { styles } from './configs/styles';
+import { global } from './configs/global.js';
+import { imports } from './configs/imports.js';
+import { r3f } from './configs/libraries/r3f.js';
+import { typescript } from './configs/libraries/typescript.js';
+import { react } from './configs/react.js';
+import { styles } from './configs/styles.js';
 
 /** @type {import('eslint').Linter.Config[]} */
 
