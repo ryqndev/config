@@ -16,7 +16,7 @@ const configs: Linter.Config[] = [
     imports(),
     r3f(),
     styles(),
-    ...typescript(),
+    ...typescript()
 ]
 
 export default configs;
